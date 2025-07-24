@@ -83,14 +83,14 @@ export default function OurServices() {
             viewport={{ once: true, amount: 0.2 }}
           >
             <img src={section.image} alt={section.title} className="w-10 h-10 mb-3 object-contain" />
-            <h3 className="text-lg sm:text-xl font-bold text-gray-600 hover:text-fourth mb-3">
+            <h3 className="text-lg sm:text-xl font-bold text-gray-600 hover:font-semibold mb-3">
               {section.title}
             </h3>
             <ul className="text-gray-700 space-y-2">
               {section.services.map((service, i) => (
                 <motion.li
                   key={i}
-                  className="flex items-start gap-2 text-sm sm:text-base hover:font-medium"
+                  className="flex items-start gap-2 text-sm sm:text-base hover:font-bold"
                   initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1 }}
                   transition={{ duration: 0.3, delay: i * 0.1 }}

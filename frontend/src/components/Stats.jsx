@@ -50,7 +50,7 @@ const stats = [
 
 export default function Stats() {
   return (
-    <div className="w-full flex justify-center items-center flex-col">
+    <div className="w-full mt-[30px] flex justify-center items-center flex-col">
       {/* Description */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}

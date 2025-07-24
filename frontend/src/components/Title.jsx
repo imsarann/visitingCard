@@ -54,8 +54,8 @@ export default function Title({ text }) {
           <div className="flex justify-center pt-[5vh] text-[12vw] sm:text-[10vw] md:text-[8vw] lg:text-[7vw] xl:text-[6vw]">
             <motion.span
               initial={{ scale: 0, opacity: 0 }}
-              animate={{ scale: 1.1, opacity: 1 }}
-              transition={{ duration: 0.5 }}
+              animate={{ scale: 1.2, opacity: 1 }}
+              transition={{ duration: 0.8 }}
               className="bg-gradient-to-tr  from-[#FFEA00] via-[#FFC000] to-[#E49B0F] hover:from-[#DFFF00] hover:via-[#FFBF00]] hover:to-[#E49B0F] bg-clip-text text-transparent"
               style={{
                 textShadow: `
@@ -75,9 +75,9 @@ export default function Title({ text }) {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
+          transition={{ duration: 0.3, delay: 0.2 }}
           whileHover={{ scale: 1.05, color: "#ca8a04", fontWeight: 600 }}
-          className="text-fourth/90 font-BricolageGrotesque text-[20px] sm:text-[28px] md:text-[42px] mt-4"
+          className="text-fourth/90 font-BricolageGrotesque transition duration-300 text-[20px] sm:text-[28px] md:text-[42px] mt-4"
         >
           Engineer
         </motion.div>
@@ -86,9 +86,9 @@ export default function Title({ text }) {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.4 }}
+          transition={{ duration: 0.3, delay: 0.4 }}
           whileHover={{ scale: 1.03, color: "#ca8a04" }}
-          className="font-semibold text-fourth text-lg sm:text-xl md:text-3xl font-Julee  mt-3"
+          className="font-semibold text-fourth transition duration-300 text-lg sm:text-xl md:text-3xl font-Julee  mt-3"
         >
           Facilities Managed. Peace Delivered.
         </motion.div>
