@@ -55,7 +55,6 @@ const data = [
 export default function OurServices() {
   return (
     <div className="relative font-Lora py-10 px-4 sm:px-6 md:px-20">
-      {/* Section Heading */}
       <motion.div
         className="font-semibold text-center mb-8 flex justify-center text-yellow-400"
         initial={{ opacity: 0, y: -100 }}
@@ -70,7 +69,6 @@ export default function OurServices() {
         </div>
       </motion.div>
 
-      {/* Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 overflow-x-auto md:overflow-visible no-scrollbar pb-4">
         {data.map((section, index) => (
           <motion.div

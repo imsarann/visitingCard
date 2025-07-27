@@ -3,7 +3,6 @@ import { useInView } from "framer-motion";
 import { useEffect, useRef } from "react";
 import { motion } from "motion/react";
 
-import about from "../assets/about.png";
 import home from "../assets/home.jpg";
 import office from "../assets/office-building.png";
 import arrow from "../assets/arrow.png";
@@ -39,7 +38,6 @@ export default function AboutOurCompany() {
   return (
     <div className="min-h-screen bg-white/50  border-dashed mt-10 pb-10 rounded-[80px] md:rounded-[250px] border w-full flex justify-center px-4 md:px-0">
       <div className="w-full max-w-[1280px] flex flex-col justify-center">
-        {/* Heading */}
         <div className="flex justify-center">
           <motion.div
             className="flex text-fourth justify-center items-center pt-10"
@@ -85,9 +83,7 @@ export default function AboutOurCompany() {
           </motion.div>
         </div>
 
-        {/* Main Section */}
         <div className="  flex flex-col-reverse  lg:flex-row items-cente items-centerr justify-between mt-10 gap-10 lg:gap-0">
-          {/* Left - Image */}
           <div className="w-full lg:w-1/2 flex justify-center px-4">
             <div
               className="border-2 p-1 rounded-2xl bg-white/80 border-amber-500"
@@ -104,7 +100,6 @@ export default function AboutOurCompany() {
             </div>
           </div>
 
-          {/* Right - Text */}
           <div
             ref={scope}
             className="  w-full h-full  lg:w-1/2 flex justify-center ">

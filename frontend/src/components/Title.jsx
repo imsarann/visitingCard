@@ -9,12 +9,10 @@ export default function Title({ text }) {
 
   return (
     <div className="min-w-screen relative z-[10] overflow-hidden">
-      {/* Background Arrows */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute inset-0 pointer-events-none">
             <div className="absolute inset-0 pointer-events-none">
-              {/* First arrow - Top Left */}
               <div className="flex justify-start">
                 <motion.img
                   initial={{ opacity: 0, x: -50 }}
@@ -56,7 +54,7 @@ export default function Title({ text }) {
               initial={{ scale: 0, opacity: 0 }}
               animate={{ scale: 1.2, opacity: 1 }}
               transition={{ duration: 0.8 }}
-              className="bg-gradient-to-tr  from-[#FFEA00] via-[#FFC000] to-[#E49B0F] hover:from-[#DFFF00] hover:via-[#FFBF00]] hover:to-[#E49B0F] bg-clip-text text-transparent"
+              className="bg-gradient-to-tr  from-[#000] via-[#000] to-[#000] bg-clip-text text-transparent"
               style={{
                 textShadow: `
       0 0 1px #FFEA00,
@@ -82,17 +80,15 @@ export default function Title({ text }) {
           Engineer
         </motion.div>
 
-        {/* Tagline */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.3, delay: 0.4 }}
           whileHover={{ scale: 1.03, color: "#ca8a04" }}
-          className="font-semibold text-fourth transition duration-300 text-lg sm:text-xl md:text-3xl font-Julee  mt-3"
+          className="font-semibold text-fourth transition duration-200 text-lg sm:text-xl md:text-3xl font-Julee  mt-3"
         >
           Facilities Managed. Peace Delivered.
         </motion.div>
-        {/* CTA */}
         <motion.div
           className="mt-8"
           initial={{ opacity: 0, y: 50 }}

@@ -51,7 +51,6 @@ const stats = [
 export default function Stats() {
   return (
     <div className="w-full mt-[30px] flex justify-center items-center flex-col">
-      {/* Description */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -64,7 +63,6 @@ export default function Stats() {
         various sites.
       </motion.div>
 
-      {/* Stats Section */}
       <section className="py-12 w-full">
         <motion.div
           initial={{ scale: 0.9, opacity: 0 }}
