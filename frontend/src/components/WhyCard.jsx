@@ -27,7 +27,7 @@ export default function WhyCard({point, cardKey}) {
               }}
             />
 
-            <div className="relative z-10 flex items-center justify-center text-center text-gray-900 font-semibold text-sm sm:text-base">
+            <div className="relative text-2xl z-10 flex items-center justify-center text-center text-gray-900 font-semibold sm:text-base">
               {point}
             </div>
           </motion.div>

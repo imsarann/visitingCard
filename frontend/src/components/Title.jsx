@@ -25,7 +25,6 @@ export default function Title({ text }) {
                 />
               </div>
 
-              {/* Second Arrow - Bottom Right */}
               <div className="flex justify-end pr-[10vw]">
                 <motion.img
                   initial={{ opacity: 0, x: 50 }}
@@ -46,36 +45,36 @@ export default function Title({ text }) {
         <HeaderLogo />
 
         <motion.div
-          className="font-Audiowide font-bold leading-tight"
+          className="font-ArchivoBlack  leading-tight"
           whileHover={{ scale: 1.03, transition: { duration: 0.3 } }}
         >
-          <div className="flex justify-center pt-[5vh] text-[12vw] sm:text-[10vw] md:text-[8vw] lg:text-[7vw] xl:text-[6vw]">
+          <div className="flex  justify-center pt-[5vh] text-[12vw] sm:text-[10vw] md:text-[8vw] lg:text-[7vw] xl:text-[6vw]">
             <motion.span
-              initial={{ scale: 0, opacity: 0 }}
-              animate={{ scale: 1.2, opacity: 1 }}
+              initial={{ scale: 1, opacity: 0, y : 80, delay : 0.2   }}
+              animate={{ scale: 1, opacity: 1 , y : 0}}
               transition={{ duration: 0.8 }}
-              className="bg-gradient-to-tr  from-[#000] via-[#000] to-[#000] bg-clip-text text-transparent"
+              className="  text-transparent "
               style={{
                 textShadow: `
-      0 0 1px #FFEA00,
-      0 0 2px #FFC000,
-      0 0 3px #DAA520,
-      0 0 4px #FFC000,
-      0 0 5px #DAA520
-    `,
+                0 0 0px #FFEA00,
+                0 0 0px #FFC000,
+                0 0 0px #DAA520,
+                0 0 0px #FFC000,
+                0 0 0px #DAA520
+                `,
+                WebkitTextStroke : "1px #DAA520"
               }}
             >
               {name.join("")}
             </motion.span>
           </div>
         </motion.div>
-
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.3, delay: 0.2 }}
-          whileHover={{ scale: 1.05, color: "#ca8a04", fontWeight: 600 }}
-          className="text-fourth/90 font-BricolageGrotesque transition duration-300 text-[20px] sm:text-[28px] md:text-[42px] mt-4"
+          transition={{ duration: 0.3, delay: 0.1 }}
+          whileHover={{ scale: 1.05, color: "#DAA520" }}
+          className="text-fourth font-Audiowide text-[20px] sm:text-[28px] md:text-[48px] mt-4"
         >
           Engineer
         </motion.div>
@@ -83,9 +82,9 @@ export default function Title({ text }) {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.3, delay: 0.4 }}
-          whileHover={{ scale: 1.03, color: "#ca8a04" }}
-          className="font-semibold text-fourth transition duration-200 text-lg sm:text-xl md:text-3xl font-Julee  mt-3"
+          transition={{ duration: 0.3, delay: 0.1 }}
+          whileHover={{ scale: 1.03, color: "#DAA520" }}
+          className=" text-fourth font-bold  text-lg sm:text-xl md:text-4xl font-Julee  mt-4"
         >
           Facilities Managed. Peace Delivered.
         </motion.div>

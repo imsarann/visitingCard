@@ -1,6 +1,8 @@
 
 export default function Footer() {
   return (
-    <div></div>
+    <div className="h-[30vh] w-[100vw] bg-seventh">
+      {" "}
+    </div>
   )
 }

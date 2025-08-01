@@ -2,6 +2,7 @@
 import AboutOurCompany from "./components/AboutOurCompany";
 import CallSvg from "./components/CallSvg";
 import Card from "./components/Card";
+import Contact from "./components/Contact";
 import FirstContact from "./components/FirstContact";
 import Footer from "./components/Footer";
 import OurServices from "./components/OurServices";
@@ -14,6 +15,9 @@ export default function App() {
   return (
     <div className="min-h-screen font-Lora bg-yellow-50 bg-dots bg-fixed flex flex-col items-center relative overflow-hidden">
       <SvgGradientDivider />
+     <div className="fixed bottom-4 right-4 z-50">
+  <Contact />
+</div>
 
       <div>
         <Title text={"SARAN"} />

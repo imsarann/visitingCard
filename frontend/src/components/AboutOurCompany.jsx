@@ -36,9 +36,10 @@ export default function AboutOurCompany() {
     "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere porro ullam nobis maxime ipsa possimus eaque id temporibus et ratione impedit hic cupiditate commodi sint, itaque sit. Culpa, aliquam sint. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate odit, itaque quam laborum impedit non excepturi quis, repellat consequatur reiciendis sit harum magnam porro eaque. Iure dolorem magni qui doloribus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi harum voluptatibus, in iste corporis dicta nulla, perspiciatis expedita nihil illum esse. Dolores, esse mollitia. Vitae dolore sequi voluptates unde. Eveniet.";
 
   return (
-    <div className="min-h-screen bg-white/50  border-dashed mt-10 pb-10 rounded-[80px] md:rounded-[250px] border w-full flex justify-center px-4 md:px-0">
-      <div className="w-full max-w-[1280px] flex flex-col justify-center">
-        <div className="flex justify-center">
+    
+    <div className="min-h-screen  bg-white/50  border-dashed  pb-10 md:pb-5 rounded-[80px] md:rounded-[250px] border w-full flex flex-wrap items-center   max-w-screen-xl mx-auto  justify-center px-4 md:px-0">
+      <div className="w-full flex-wrap max-w-[1280px] flex flex-col justify-center">
+        <div className="flex  justify-center">
           <motion.div
             className="flex text-fourth justify-center items-center pt-10"
             initial={{ scale: 0, opacity: 0 }}
@@ -48,7 +49,7 @@ export default function AboutOurCompany() {
               transition: { duration: 0.3 },
             }}
           >
-            <div className="text-center ">
+            <div className="text-center mb-8 ">
               <motion.div
                 ref={ref}
                 initial={{ opacity: 0, y: 40 }}
@@ -83,8 +84,9 @@ export default function AboutOurCompany() {
           </motion.div>
         </div>
 
-        <div className="  flex flex-col-reverse  lg:flex-row items-cente items-centerr justify-between mt-10 gap-10 lg:gap-0">
-          <div className="w-full lg:w-1/2 flex justify-center px-4">
+        <div className="  mt-[5vh] flex md:flex-row flex-col-reverse gap-10 w-full px-4">
+
+          <div className="w-full lg:w-1/2 flex items-center justify-center px-4">
             <div
               className="border-2 p-1 rounded-2xl bg-white/80 border-amber-500"
               style={{
@@ -94,9 +96,8 @@ export default function AboutOurCompany() {
               <img
                 src={home}
                 alt="home"
-                className="w-full max-w-[400px] md:h-[65vh] border-2 border-fourth rounded-2xl brightness-90 object-cover"
+                className="w-auto h-[45vh] md:h-[50vh] border-2 border-fourth rounded-2xl brightness-90 object-cover"
               />
-              <div className="fixed z-[20]">Hello</div>
             </div>
           </div>
 

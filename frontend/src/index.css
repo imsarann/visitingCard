@@ -31,6 +31,10 @@
   font-family: Inter;
   src: url("./assets/fonts/Inter_18pt-Regular.ttf");
 }
+@font-face {
+  font-family: Anton;
+  src: url("./assets/fonts/Anton-Regular.ttf");
+}
 @theme{
   --font-Lora : "Lora", serif;
   --color-first : #fab824;
@@ -38,6 +42,9 @@
   --color-third : #949494;
   --color-fourth : #575757;
   --color-fifth : "#a020f0";
+  --color-LogoBorder : #fabd00;
+  --color-sixth : #fabd00;
+  --color-seventh : #ecb740;
 
   --font-BebasNeue : "BebasNeue" , sans-serif;
   --font-Exo2 : "Exo2" , sans-serif;
@@ -45,9 +52,8 @@
   --font-Audiowide : "Audiowide" , sans-serif;
   --font-Julee : "Julee" , sans-serif;
   --font-Inter : "Inter" , sans-serif;
+  --font-Anton : "Anton" , sans-serif;
   --font-BricolageGrotesque : "BricolageGrotesque" , sans-serif;
-  --color-LogoBorder : #fabd00;
-  --color-sixth : #fabd00;
   --backgroundImage : {
    'dots': "radial-gradient(#f9e5ae 1px, transparent 1px)"
   };
@@ -97,13 +103,6 @@
   }
 }
 
-/* .bg-dots {
-  background-image: radial-gradient(#f9e5ae 1px, transparent 1px);
-  background-size: 7px 7px;
-  background-position: 0 0;
-  background-repeat: repeat;
-} */
-
 .custom-shape-divider-top {
   position: absolute;
   top: 0;
@@ -119,8 +118,6 @@
   width: calc(100% + 1.3px);
   height: 90px;
 }
-
-
 
 .bg-dots{
 
